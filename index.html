@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  
-    <style>
-      /* Padding for .navbar */
-        body {
-          padding-top: 50px;
-          background: #e5ffff;
-        }
+  <link rel="stylesheet" href="index.css">
 
-      /* Sets up the sections of the page to equal the screen height */
-        .page-block {
-          height: 110vh; /* Adjust this!!! */
-        }
-    </style>
-  </head>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
+</head>
 <body>
+  <!--
+To Do:
+- One Page Scroll
+- Scrolling feed on instagram/twitter
+-->
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="http://codepen.io/rasliche/pen/bEegep">E</a>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#home">E</a>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#about-screen">About</a></li>
       <li><a href="#portfolio-screen">Portfolio</a></li>
@@ -32,34 +30,67 @@
   </div>
 </nav>
 <div class="main container">
-  <div class="page-block center-block">
+  <div id="home" class="page-block center-block">
     <h1 class="text-primary text-center">The Portfolio of a Marine Biologist</h1>
     <h3 class="text-muted text-center">Totally out of his element</h3>
   </div>
-  <div id="about-screen" class="text-center page-block center-block">
+  <div id="about-screen" class="text-center page-block">
     <h1>About</h1>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+        <p>I'm a card carrying Marine Biologist living the dream in Paradise. Fortunately, work and play sometimes overlap when I'm able to work as a licensed Captain and an Education and Outreach Specialist with the <abbr title="Florida Keys National Marine Sanctuary">FKNMS</abbr>.</p>
+        <p>Currently, I'm working on building up my web development chops in my free time in order to help out local non-profits working on a shoestring budget while trying to help the environment.</p>
+        <p>When I'm not engaging with the public for work, you can find me sitting on bridges, exploring the mangroves, riding my bike across bridges, fishing, jumping off bridges, or trying to learn this whole coding thing.</p>
+      </div>
+    </div>
   </div>
   <div id="portfolio-screen" class="text-center page-block center-block">
     <h1>Portfolio</h1>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="#" class="thumbnail"><img src="http://placehold.it/350x150"></a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="#" class="thumbnail"><img src="http://placehold.it/350x150"></a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="#" class="thumbnail"><img src="http://placehold.it/350x150"></a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="#" class="thumbnail"><img src="http://placehold.it/350x150"></a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="#" class="thumbnail"><img src="http://placehold.it/350x150"></a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="#" class="thumbnail"><img src="http://placehold.it/350x150"></a>
+      </div>
+    </div>
   </div>
   <div id="contact-screen" class="text-center page-block center-block">
     <h1>Contact</h1>
     <div class="row">
+      <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+        <p>Get in touch with me. I'd love to discuss fishing, web design and development, sailing, bikes, birds, plants, or anything else you're passionate about</p>
+        <p>Please take a look at my various feeds below and reach out if there's anything I can help you with.</p>
+      </div>
+    </div>
+    <div class="row">
       <div class="col-md-3 col-sm-6 col-xs-12">
         <h3>LinkedIn</h3>
-        <a href="https://www.linkedin.com/in/ericraslich">LinkedIn Profile</a>
+        <button class="btn"><a href="https://www.linkedin.com/in/ericraslich">LinkedIn Profile</a></button>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <h3>GitHub</h3>
-        <a href="https://github.com/rasliche">GitHub</a>
+        <button class="btn"><a href="https://github.com/rasliche">GitHub</a></button>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <h3>Instagram</h3>
-        <a href="https://instagram.com/rasliche">@rasliche</a>
+        <button class="btn"><a href="https://instagram.com/rasliche">@rasliche</a></button>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <h3>Twitter</h3>
-        <a href="https://twitter.com/rasliche">@rasliche</a>
+        <button class="btn"><a href="https://twitter.com/rasliche">@rasliche</a></button>
       </div>
     </div>
   </div>
