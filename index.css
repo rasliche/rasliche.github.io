@@ -4,9 +4,12 @@ body {
   /* for scrollspy */
 }
 
+.navbar li {
+  width: 80px;
+}
+
 /* Sets up the sections of the page to
 equal the screen height */
-
 .page-block {
   padding-top: 5vh;
   /* Puts <a> tags below nav */
