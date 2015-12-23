@@ -1,6 +1,9 @@
 var Timer = function() {
   var breakTime = 5;
   var workTime = 25;
+  var ticking = false;
+  var working = true;
+  var timeLeft;
   var intervalID;
 
   this.getBreakTime = function() {
@@ -27,32 +30,25 @@ var Timer = function() {
     workTime = --workTime;
   };
 
-  this.startTimer = function($el) {
-    while ($el.hasClass('tick')) {
-      updateTimer();
-    }
+  this.startTimer = function() {
+    ticking = true;
   };
 
-  this.updateTimer = function($el) {};
+  this.stopTimer = function() {
+    ticking = false;
+  };
+
+  this.updateTimer = function() {
+    // Are we working or breaking?
+    if (working && !ticking) {
+      var timeLeft = workTime;
+    } else if (!working && !ticking) {
+      var timeLeft = breakTime;
+    } else {
+
+    }
+  };
+  
 };
 
-$('document').ready(function() {
-  var timer = new Timer();
-  var $time = $('.time');
-  var curTime = new Date();
-  $('.work').append(function() {
-    console.log(timer.getWorkTime());
-    return timer.getWorkTime();
-  });
-
-  $('.break').append(function() {
-    console.log(timer.getBreakTime());
-    return timer.getBreakTime();
-  });
-
-  $time.html(curTime.getMinutes()+":"+curTime.getSeconds());
-  $time.on('click', function() {
-    $time.toggleClass('tick');
-    console.log('ticked');
-  });
-});
+var timer = new Timer();
