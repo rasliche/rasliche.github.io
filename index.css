@@ -1,16 +1,14 @@
 body {
   background: #e5ffff;
-  position: relative;
-  /* for scrollspy */
 }
 
-.navbar li {
-  width: 80px;
+.pure-menu-list {
+  display: inline;
 }
 
 /* Sets up the sections of the page to
 equal the screen height */
-.page-block {
+section, .page-block {
   padding-top: 5vh;
   /* Puts <a> tags below nav */
   height: 100vh;
