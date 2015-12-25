@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
+  <meta charset="utf-8">
 
   <link rel="stylesheet" href="index.css">
 
   <!-- JQuery -->
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans|Satisfy|Handlee' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <!--
@@ -14,29 +16,31 @@ To Do:
 - One Page Scroll
 - Scrolling feed on instagram/twitter
 -->
-<nav class="">
-    <a class="" href="#home">E</a>
-    <ul class="">
-      <li><a href="#about-screen">About</a></li>
-      <li><a href="#portfolio-screen">Portfolio</a></li>
-      <li><a href="#contact-screen">Contact</a></li>
-    </ul>
+<nav>
+  <a class="brand" href="#home">ER</a>
+  <div class="nav-links">
+    <a href="#about-screen">About</a>
+    <span>/</span>
+    <a href="#portfolio-screen">Portfolio</a>
+    <span>/</span>
+    <a href="#contact-screen">Contact</a>
+  </div>
 </nav>
 <div class="main">
-  <div id="home" class="page-block">
-    <h1 class="">The Portfolio of a Marine Biologist</h1>
-    <h3 class="">Totally out of his element</h3>
-  </div>
-  <div id="about-screen" class="page-block">
+  <section id="home" class="page-block">
+    <div class=" jumbotron">
+      <h1 class="">The Portfolio of a Marine Biologist</h1>
+      <h3 class="">(Completely out of his element)</h3>
+    </div>
+  </section>
+  <section id="about-screen" class="page-block">
     <h1>About</h1>
-    <div class="">
       <div class="">
         <p>I'm a card carrying Marine Biologist living the dream in Paradise. Fortunately, work and play sometimes overlap when I'm able to work as a licensed Captain and an Education and Outreach Specialist with the <abbr title="Florida Keys National Marine Sanctuary">FKNMS</abbr>.</p>
         <p>Currently, I'm working on building up my web development chops in my free time in order to help out local non-profits working on a shoestring budget while trying to help the environment.</p>
         <p>When I'm not engaging with the public for work, you can find me sitting on bridges, exploring the mangroves, riding my bike across bridges, fishing, jumping off bridges, or trying to learn this whole coding thing.</p>
       </div>
-    </div>
-  </div>
+  </section>
   <section id="portfolio-screen" class="text-center page-block center-block">
     <h1>Portfolio</h1>
     <div class="row">
@@ -60,10 +64,10 @@ To Do:
       </div>
     </div>
   </section>
-  <div id="contact-screen" class="text-center page-block center-block">
+  <section id="contact-screen" class="text-center page-block center-block">
     <h1>Contact</h1>
     <div class="row">
-      <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+      <div>
         <p>Get in touch with me. I'd love to discuss fishing, web design and development, sailing, bikes, birds, plants, or anything else you're passionate about</p>
         <p>Please take a look at my various feeds below and reach out if there's anything I can help you with.</p>
       </div>
@@ -86,7 +90,7 @@ To Do:
         <button class="btn"><a href="https://twitter.com/rasliche">@rasliche</a></button>
       </div>
     </div>
-  </div>
+  </section>
 </div>
   <script src="scripts.js"></script>
 </body>
