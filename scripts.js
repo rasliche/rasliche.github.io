@@ -1,5 +1,3 @@
-$(document).ready(function() {
-  $('body').scrollspy({
-    target: 'nav'
-  });
-});
+// $(document).ready(function() {
+//
+// });
