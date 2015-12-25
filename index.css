@@ -5,7 +5,7 @@
 
 
 body {
-  background: #e5ffff;
+  background-color: #e5ffff;
   font-family: 'Open Sans', sans-serif;
   color: #444;
   min-width: 800px;
@@ -72,4 +72,16 @@ section {
 .jumbotron h1 {
   font-family: 'Satisfy', cursive;
   font-weight: 200;
+}
+
+#about-screen {
+  background-color: #c4ffff;
+}
+
+#portfolio-screen {
+  background-color: #a3ffff;
+}
+
+#contact-screen {
+  background-color: #82ffff;
 }
