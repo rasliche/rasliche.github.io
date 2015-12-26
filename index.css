@@ -8,11 +8,16 @@ body {
   background-color: #e5ffff;
   font-family: 'Open Sans', sans-serif;
   color: #444;
+  margin-top: 35px;
+  margin-bottom: 0px;
   min-width: 800px;
 }
 
+/* Global styles */
 h1 {
   font-size: 50px;
+  margin-top: .25em;
+  margin-bottom: .1em;
 }
 
 /* Nav bar - positioned at the top of the screen */
@@ -33,10 +38,6 @@ nav .brand {
   padding-left: 20px;
 }
 
-nav span {
-
-}
-
 .nav-links {
   padding-top: 5px;
   padding-right: 20px;
@@ -54,17 +55,26 @@ a, a:visited {
 /* Sets up the sections of the page to
 equal the screen height */
 section {
-  margin-top: 45px;
+  margin-top: 0;
+  padding-top: 40px;
   /* Puts <a> tags below nav */
   height: 100vh;
 }
+
+
+.row > * {
+  display: inline;
+}
+
 
 /* Main content of the first screen */
 .jumbotron {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 600px;
+  margin-top: 5px;
+  height: 250px;
+  width: 800px;
   border: solid 2px #000;
   border-radius: 5%;
 }
@@ -81,6 +91,8 @@ section {
 #portfolio-screen {
   background-color: #a3ffff;
 }
+
+
 
 #contact-screen {
   background-color: #82ffff;
