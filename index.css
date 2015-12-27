@@ -1,14 +1,147 @@
+
+/*font-family: 'Open Sans', sans-serif;*/
+/*font-family: 'Satisfy', cursive;*/
+/*font-family: 'Handlee', cursive;*/
+
+
 body {
-  background: #e5ffff;
-  position: relative;
-  /* for scrollspy */
+  background-color: #e5ffff;
+  font-family: 'Open Sans', sans-serif;
+  color: #444;
+  min-width: 800px;
+}
+
+/* Global styles */
+h1 {
+  font-size: 50px;
+  margin-top: .25em;
+  margin-bottom: .1em;
+}
+
+
+.social-icon {
+  height: 100px;
+  width: 100px;
+}
+/* Nav bar - positioned at the top of the screen */
+nav {
+  background-color: #333;
+  border-bottom: solid 5px #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 100%;
+}
+
+/* Brand Icon */
+nav .brand {
+  font-size: 24px;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+.nav-links {
+  padding-top: 5px;
+  padding-right: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  float: right;
+  color: #888;
+}
+
+/* Link <a> items */
+a, a:visited {
+  color: #ddd;
+}
+
+.main {
+  margin-top: 35px;
+  margin-bottom: 0px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Sets up the sections of the page to
 equal the screen height */
-
-.page-block {
-  padding-top: 5vh;
+section {
+  margin-top: 0;
+  padding-top: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
   /* Puts <a> tags below nav */
-  height: 100vh;
+  height: 94vh;
+  border-top: dashed 5px #000;
+}
+
+section:last-of-type {
+  border-bottom: dashed 5px #000;
+}
+
+/* Main content of the first screen */
+.jumbotron {
+  text-align: center;
+  color: #222;
+  margin-left: 10px;
+  margin-right: auto;
+  margin-top: 5px;
+  height: 220px;
+  width: 500px;
+  border: solid 2px #000;
+  border-radius: 15px;
+}
+
+.jumbotron h1 {
+  font-family: 'Satisfy', cursive;
+  font-weight: 200;
+}
+
+#home-screen {
+  height: 500px;
+  background-image: url("common-resources/pelican-horizon.png");
+  background-size: 800px;
+  background-repeat: no-repeat;
+}
+
+#about-screen {
+  background-color: #c4ffff;
+}
+
+#portfolio-screen {
+  background-color: #a3ffff;
+}
+
+.portfolio-row {
+
+}
+
+.project {
+  display: inline-block;
+}
+
+#contact-screen {
+  background-color: #82ffff;
+}
+
+.solicitation p:last-of-type {
+  text-align: center;
+}
+
+.social {
+  width: 535px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-stream {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  padding: 15px;
+}
+
+footer {
+  text-align: center;
+  font-size: small;
 }
