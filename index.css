@@ -18,6 +18,7 @@ h1 {
   margin-bottom: .1em;
 }
 
+
 .social-icon {
   height: 100px;
   width: 100px;
@@ -57,15 +58,20 @@ a, a:visited {
 .main {
   margin-top: 35px;
   margin-bottom: 0px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Sets up the sections of the page to
 equal the screen height */
 section {
   margin-top: 0;
-  padding-top: 40px;
+  padding-top: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
   /* Puts <a> tags below nav */
-  height: 93vh;
+  height: 94vh;
   border-top: dashed 5px #000;
 }
 
@@ -106,7 +112,11 @@ section:last-of-type {
   background-color: #a3ffff;
 }
 
-.portfolio-row > * {
+.portfolio-row {
+
+}
+
+.project {
   display: inline-block;
 }
 
@@ -114,16 +124,24 @@ section:last-of-type {
   background-color: #82ffff;
 }
 
-.social {
-
+.solicitation p:last-of-type {
+  text-align: center;
 }
 
-.social > * {
-  display: inline-block;
-
+.social {
+  width: 535px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .social-stream {
+  display: inline-block;
   text-align: center;
+  width: 100px;
   padding: 15px;
+}
+
+footer {
+  text-align: center;
+  font-size: small;
 }
