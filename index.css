@@ -45,7 +45,6 @@ nav .brand {
   padding-top: 5px;
   padding-right: 20px;
   font-size: 20px;
-  text-decoration: none;
   float: right;
   color: #888;
 }
@@ -53,6 +52,8 @@ nav .brand {
 /* Link <a> items */
 a, a:visited {
   color: #ddd;
+  text-decoration-line: none;
+  text-decoration-style: dashed;
 }
 
 .main {
@@ -81,7 +82,8 @@ section:last-of-type {
 /* Main content of the first screen */
 .jumbotron {
   text-align: center;
-  color: #222;
+  background: rgba(255,255,255,.3);
+  color: #282828;
   margin-left: 10px;
   margin-right: auto;
   margin-top: 25px;
