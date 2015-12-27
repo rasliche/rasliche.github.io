@@ -8,8 +8,6 @@ body {
   background-color: #e5ffff;
   font-family: 'Open Sans', sans-serif;
   color: #444;
-  margin-top: 35px;
-  margin-bottom: 0px;
   min-width: 800px;
 }
 
@@ -56,18 +54,29 @@ a, a:visited {
   color: #ddd;
 }
 
+.main {
+  margin-top: 35px;
+  margin-bottom: 0px;
+}
+
 /* Sets up the sections of the page to
 equal the screen height */
 section {
   margin-top: 0;
   padding-top: 40px;
   /* Puts <a> tags below nav */
-  height: 100vh;
+  height: 93vh;
+  border-top: dashed 5px #000;
+}
+
+section:last-of-type {
+  border-bottom: dashed 5px #000;
 }
 
 /* Main content of the first screen */
 .jumbotron {
   text-align: center;
+  color: #222;
   margin-left: 10px;
   margin-right: auto;
   margin-top: 5px;
@@ -83,6 +92,7 @@ section {
 }
 
 #home-screen {
+  height: 500px;
   background-image: url("common-resources/pelican-horizon.png");
   background-size: 800px;
   background-repeat: no-repeat;
@@ -96,7 +106,9 @@ section {
   background-color: #a3ffff;
 }
 
-
+.portfolio-row > * {
+  display: inline-block;
+}
 
 #contact-screen {
   background-color: #82ffff;
