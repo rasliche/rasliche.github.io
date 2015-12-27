@@ -20,6 +20,11 @@ h1 {
   margin-bottom: .1em;
 }
 
+.social-icon {
+  height: 100px;
+  width: 100px;
+  color: #fff;
+}
 /* Nav bar - positioned at the top of the screen */
 nav {
   background-color: #333;
@@ -62,7 +67,7 @@ section {
 }
 
 
-.row > * {
+.row * {
   display: inline;
 }
 
@@ -76,7 +81,7 @@ section {
   height: 250px;
   width: 800px;
   border: solid 2px #000;
-  border-radius: 5%;
+  border-radius: 15px;
 }
 
 .jumbotron h1 {
