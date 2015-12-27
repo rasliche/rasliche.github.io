@@ -23,7 +23,6 @@ h1 {
 .social-icon {
   height: 100px;
   width: 100px;
-  color: #fff;
 }
 /* Nav bar - positioned at the top of the screen */
 nav {
@@ -66,20 +65,14 @@ section {
   height: 100vh;
 }
 
-
-.row * {
-  display: inline;
-}
-
-
 /* Main content of the first screen */
 .jumbotron {
   text-align: center;
-  margin-left: auto;
+  margin-left: 10px;
   margin-right: auto;
   margin-top: 5px;
-  height: 250px;
-  width: 800px;
+  height: 220px;
+  width: 500px;
   border: solid 2px #000;
   border-radius: 15px;
 }
@@ -87,6 +80,12 @@ section {
 .jumbotron h1 {
   font-family: 'Satisfy', cursive;
   font-weight: 200;
+}
+
+#home-screen {
+  background-image: url("common-resources/pelican-horizon.png");
+  background-size: 800px;
+  background-repeat: no-repeat;
 }
 
 #about-screen {
@@ -101,4 +100,18 @@ section {
 
 #contact-screen {
   background-color: #82ffff;
+}
+
+.social {
+
+}
+
+.social > * {
+  display: inline-block;
+
+}
+
+.social-stream {
+  text-align: center;
+  padding: 15px;
 }
